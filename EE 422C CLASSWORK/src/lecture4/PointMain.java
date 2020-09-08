@@ -11,13 +11,14 @@ public class PointMain {
 		System.out.println(new PointMain().distanceFromOrigin3(p1));
 		
 		System.out.println(p1.distanceFromOrigin());
-		Point p2 = new Point();
+		Point p2 = new Point(5, 12);
 		p2.setX(5);  
 		p2.setY(12);
 		System.out.println(p2.distanceFromOrigin());
 		// 		System.out.println(p1.noOfPoints);
 		System.out.println(p1.distance(p2));
 		System.out.println(Point.noOfPoints);
+		System.out.println(p1); //uses Overriden toString method to print out this point
 		
 	}
 	
