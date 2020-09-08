@@ -18,9 +18,8 @@ public class PointMain {
 		// 		System.out.println(p1.noOfPoints);
 		System.out.println(p1.distance(p2));
 		System.out.println(Point.noOfPoints);
-
-
 	}
+	
 	
 	public static double distanceFromOrigin(Point p) {
 		return Math.sqrt(Math.pow(p.getX(), 2) + Math.pow(p.getY(), 2));
