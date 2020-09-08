@@ -18,6 +18,7 @@ public class PointMain {
 		// 		System.out.println(p1.noOfPoints);
 		System.out.println(p1.distance(p2));
 		System.out.println(Point.noOfPoints);
+		
 	}
 	
 	

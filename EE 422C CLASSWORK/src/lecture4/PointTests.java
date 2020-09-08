@@ -35,13 +35,13 @@ public class PointTests {
 	@Test
 	public void testGetDistanceFromOrigin() {
 		Point p = new Point(3, 4);
-		assert(p.getDistanceFromOrigin() == 5.0);
+		assert(p.distanceFromOrigin() == 5.0);
 	}
 	
 	@Test
 	public void testGetDistanceFromOrigin2() {
 		Point p = new Point(1, 1);
-		assertEquals(1.414, p.getDistanceFromOrigin(), 0.001);
+		assertEquals(1.414, p.distanceFromOrigin(), 0.001);
 	}
 
 
