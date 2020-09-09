@@ -1,17 +1,16 @@
+//A class to represent legal secretaries
 package classwork5;
 
 public class LegalSecretary extends Secretary {
 
-	public LegalSecretary(int years) {
-		super(years);
+	public void fileLegalBriefs() {
+		System.out.println("I could file all day!");
 	}
 	
-	@Override
+	@Override 
 	public double getSalary() {
-		return super.getSalary() + 5000 + getLongevityBonus();
+		double baseSalary = super.getSalary();
+		return baseSalary + 5000.0;
 	}
 	
-	public void file() {
-		System.out.println("File, file, File, I love filing!");
-	}
 }
