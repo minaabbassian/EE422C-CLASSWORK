@@ -75,4 +75,18 @@ public class Point {
 	public String toString() {
 		return "[" + x + ", " + y +"]";
 	}
+	
+	//you should be able to pass in ANY object
+	//anything that is an Object can be passed as a parameter
+	@Override 
+	public boolean equals(Object other) {
+		if(other == null)
+			return false; //a null object 
+		if(!(other instanceof Point))
+			return false; 
+		Point p = (Point) other; 
+		if(p.x == this.x && p.y == this.y)
+			return true;
+		return false;
+	}
 }
