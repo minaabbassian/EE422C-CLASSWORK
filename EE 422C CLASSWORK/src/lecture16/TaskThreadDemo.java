@@ -17,7 +17,10 @@ public class TaskThreadDemo {
 		Thread thread1 = new Thread(printA); //parameter is Runnable object
 		Thread thread2 = new Thread(printB);
 		Thread thread3 = new Thread(print100);
-		thread2.setPriority(Thread.MAX_PRIORITY);
+		
+		//MAX_PRIORITY does not mean exclusive priority 
+		//MAX_PRIORITY gets a lot of priority by not 100%
+		//thread2.setPriority(Thread.MAX_PRIORITY);
 		
 		//CASE1
 		/*
@@ -37,6 +40,7 @@ public class TaskThreadDemo {
 			//means the current thread should sleep and let the other threads go
 			Thread.sleep(10); //wait 1 milliseconds
 		} catch (InterruptedException e) {
+			//purpose of catch - to wrap up your thread so that it can safely exit
 		}
 		//prints the active number of threads after 10 milliseconds
 		//expect 3
