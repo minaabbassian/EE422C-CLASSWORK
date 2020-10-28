@@ -7,9 +7,12 @@ public class PrintNum implements Runnable {
 	public PrintNum(int max) {
 		this.max = max;
 	}
+	
+	@Override
+	//prints numbers from 1 to a maximum 
 	public void run() {
 		for (int i = 0; i < max; i++) {
-			System.out.print(i);
+			System.out.print(i++);
 			//Thread.yield();
 
 			/*
